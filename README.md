@@ -1,6 +1,6 @@
 # run-at: schedule gcode execution
 
-A series of shell scrips and gcode macros that enables scheduled gcode execution using the [`at` shell utility](https://www.redhat.com/en/blog/linux-at-command). Schedule lights to turn on at a certain time, or the bed to start heating up at a certain time, or even start a print at a scheduled time. 
+A series of shell scripts and gcode macros that enables scheduled gcode execution using the [`at` shell utility](https://www.redhat.com/en/blog/linux-at-command). Schedule lights to turn on at a certain time, or the bed to start heating up at a certain time, or even start a print at a scheduled time. 
 
 **NOTE:** Running arbitrary gcode on your machine can lead to bad stuff. When scheduling gcode execution, make sure you know what the gcode is doing, and make sure the machine is safe to execute the gcode at the scheduled time. Use this at your own risk!
 
@@ -36,7 +36,7 @@ These steps are to be done on your Pi (ssh in, use a monitor, whatever)
     cp -r ./bin/* ~/bin/
     ```
 
-1. Copy the contents of `run-at.cfg` to your printer config
+1. Copy the contents of [`run-at.cfg`](https://github.com/kaine119/klipper-run-at/blob/master/run_at.cfg) to your printer config
 
 ## `at` timespecs
 
