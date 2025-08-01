@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+
+# Run arbitrary gcode at a schedule time
+# Usage: run-at <timecode> <gcode>
+# e.g. run-at "now + 20 mins" "M118 Hello, world"
+
+echo "Command to run: $2"
+at $1 << EOF
+    echo $2 > ~/printer_data/comms/klippy.serial
+EOF
