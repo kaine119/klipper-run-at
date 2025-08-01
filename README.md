@@ -16,7 +16,7 @@ These steps are to be done on your Pi (ssh in, use a monitor, whatever)
 
 1. Install the [G-Code Shell Command Extension](https://github.com/dw-0/kiauh/blob/master/docs/gcode_shell_command.md)
 
-    **NOTE:** Read the warnings at the above link carefully. This extension allows remote execution of arbitrary shell commands from Klipper, and in turn any Klippper interfaces and frontends you are using (e.g. Moonraker + Mainsail/Fluidd). Lots of abuse can happen if your Klipper host isn't secured properly!
+    **NOTE:** Read the warnings at the above link carefully. This extension allows remote execution of arbitrary shell commands from Klipper, and in turn any Klipper interfaces and frontends you are using (e.g. Moonraker + Mainsail/Fluidd). Lots of abuse can happen if your Klipper host isn't secured properly!
 
     The easiest way to do this is to use [`kiauh`](https://github.com/dw-0/kiauh/tree/master) (Advanced > G-Code Shell Command)
 
